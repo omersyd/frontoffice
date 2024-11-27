@@ -26,7 +26,7 @@ defmodule Hello.Helpers.HistoryData do
 
     from(h in Hello.Models.HistoryData,
       where: h.symbol == ^symbol and h.date >= ^from_date and h.date <= ^to_date,
-      select: %{date: h.date, price: h.price, symbol: h.symbol}
+      select: %{date: h.date, price: h.price}
     )
     |> Repo.all()
   end
