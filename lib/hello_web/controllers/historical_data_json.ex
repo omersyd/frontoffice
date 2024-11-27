@@ -1,6 +1,6 @@
 defmodule HelloWeb.HistoricalDataJSON do
 
   def index(%{list: list}) do
-    list
+    %{status: "success", data: list}
   end
 end
