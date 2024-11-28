@@ -17,6 +17,7 @@ export const Chart = {
         const elem = document.getElementById('foo');
 
         const datepicker = new DateRangePicker(elem, {
+            format: 'dd/mm/yyyy'
         });
 
         console.log("Hook mounted!");
