@@ -114,7 +114,7 @@ export const Holding = {
 
             // Add content to the card
             card.innerHTML = `
-              <h2 class="text-xl font-bold text-gray-800 mb-4">Profile Information</h2>
+              <h2 class="text-xl font-bold text-gray-800 mb-4">Account Details</h2>
               <div class="space-y-2">
                 <div class="flex justify-between">
                   <span class="font-medium text-gray-600">User Name:</span>
