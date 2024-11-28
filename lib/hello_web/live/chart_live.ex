@@ -8,16 +8,40 @@ defmodule HelloWeb.ChartLive do
   def render(assigns) do
     ~H"""
     <div>
-      <select id="symbol-select">
-        <option value="NIFTY 50">NIFTY 50</option>
-        <option value="NIFTY BANK">NIFTY BANK</option>
-      </select>
-      <div id="foo">
-        <input type="text" name="start" placeholder="from date" />
-        <span>to</span>
-        <input type="text" name="end" placeholder="to date" />
+      <div class="p-2 flex flex-col items-center">
+        <!-- Dropdown -->
+        <select
+          id="symbol-select"
+          class="w-64 p-2 mb-4 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        >
+          <option value="NIFTY 50">NIFTY 50</option>
+          <option value="NIFTY BANK">NIFTY BANK</option>
+        </select>
+        <!-- Date Range Inputs -->
+        <div id="foo" class="flex items-center space-x-2 mb-4">
+          <input
+            type="text"
+            name="start"
+            placeholder="From Date"
+            class="w-32 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          />
+          <span class="text-gray-600">to</span>
+          <input
+            type="text"
+            name="end"
+            placeholder="To Date"
+            class="w-32 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+        <!-- Button -->
+        <button
+          id="fetch-btn"
+          class="w-64 px-4 py-2 text-white bg-blue-600 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Fetch
+        </button>
       </div>
-      <button id="fetch-btn">Fetch</button>
+
       <div id="chart-container" phx-hook="Chart" class="relative"></div>
     </div>
     """
