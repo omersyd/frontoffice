@@ -8,6 +8,17 @@ defmodule HelloWeb.ChartLive do
   def render(assigns) do
     ~H"""
     <div>
+      <div id="holdings-container" phx-hook="Holding">
+        <div id="profile-card" class="flex justify-center items-center">
+          <!-- Card will be dynamically inserted here -->
+        </div>
+        <div id="profit-loss-card" class="mb-4"></div>
+        <!-- Table Container -->
+        <div id="table-container" class="overflow-x-auto">
+          <!-- Table will be dynamically inserted here -->
+        </div>
+      </div>
+      <!-- Chart Container -->
       <div class="p-2 flex flex-col items-center">
         <!-- Dropdown -->
         <select

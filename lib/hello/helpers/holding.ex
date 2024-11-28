@@ -27,17 +27,17 @@ defmodule Hello.Helpers.Holding do
     Repo.all(query)
     |> Enum.map(fn holding ->
       %{
-        symbol: holding.symbol,
+        tradingsymbol: holding.symbol,
         exchange: holding.exchange,
         isin: holding.isin,
         quantity: holding.quantity,
-        auth_date: NaiveDateTime.to_string(holding.auth_date),
-        avg_price: holding.avg_price,
+        authorised_date: NaiveDateTime.to_string(holding.auth_date),
+        average_price: holding.avg_price,
         last_price: holding.last_price,
         close_price: holding.close_price,
         pnl: holding.pnl,
         day_change: holding.day_change,
-        day_change_perc: holding.day_change_perc
+        day_change_percentage: holding.day_change_perc
       }
     end)
   end

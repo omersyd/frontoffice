@@ -22,8 +22,9 @@ import { Socket } from "phoenix"
 import { LiveSocket } from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import { Chart } from "./chart"
+import { Holding } from "./holding"
 
-const Hooks = { Chart: Chart };
+const Hooks = { Chart: Chart, Holding: Holding};
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
