@@ -111,7 +111,7 @@ export const Chart = {
             console.log("button click occured");
 
             // Add any initialization logic here
-            const baseUrl = "http://localhost:4000/historical-data";
+            const baseUrl = "/historical-data";
             const params = new URLSearchParams({
                 symbol: symbolSelect.value,
                 from_date: from_date,

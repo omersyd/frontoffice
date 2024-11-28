@@ -144,7 +144,7 @@ export const Holding = {
         }
 
 
-        const baseUrlProfile = "http://localhost:4000/user/profile";
+        const baseUrlProfile = "/user/profile";
         const paramsProfile = new URLSearchParams({
             email: "xxxyyy@gmail.com"
         });
