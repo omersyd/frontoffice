@@ -35,6 +35,7 @@ hello-*.tar
 npm-debug.log
 /assets/node_modules/
 
+/logs
 # Database files
 # *.db
 # *.db-*
