@@ -24,6 +24,8 @@ defmodule HelloWeb.Router do
   scope "/", HelloWeb do
     pipe_through :api
     get "/historical-data", HistoricalDataController, :index
+    get "user/profile", UserController, :index
+    get "portfolio/holdings", HoldingController, :index
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
