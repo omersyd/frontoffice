@@ -172,7 +172,7 @@ export const Holding = {
                 console.error("Error fetching data:", error); // Handle errors
             });
 
-        const baseUrl = "http://localhost:4000/portfolio/holdings";
+        const baseUrl = "/portfolio/holdings";
         const params = new URLSearchParams({
             uid: "AB1234"
         });
