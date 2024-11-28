@@ -34,6 +34,10 @@ export const Chart = {
             bottomColor: 'rgba(41, 98, 255, 0.28)',
         });
 
+        symbolSelect.addEventListener("change", () => {
+            areaSeries.setData([])
+        })
+
         chart.applyOptions({
             localization: {
                 priceFormatter: myPriceFormatter,
