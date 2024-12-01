@@ -13,11 +13,13 @@ Kindly follow the steps mentioned in installation guide to install asdf for the 
 **1.** Erlang version used for development ``` 26.0```  
 **2.** Run the following command to get erlang plugin ``` asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git```  
 **3.** Run the following command to install erlang version 26.0 ```asdf install erlang 26.0 ```
+**4.** To make erlang as global use ```asdf global erlang 26.0```
 
 **Steps to Install Elixir:**  
 **1.** Elixir version used for development ``` 1.17.0-otp-26 ```  
 **2.** Run the following command to get elixir plugin ``` asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git ```  
 **3.** Run the following command to install elixir version 1.17.0-otp-26 ```asdf install elixir 1.17.0-otp-26 ```
+**4.** To make elixir as global run ```asdf global elixir 1.17.0-otp-26```
 
 **Steps to compile and run:**  
 **1.** Navigate to the project directory and run ``` mix deps.get ```  
