@@ -56,9 +56,6 @@ Follow the steps in the guide to install Asdf for your target machine.
    mix deps.compile
    ```  
 3. Install Node.js version `v20.14.0`:  
-   ```bash
-   asdf install nodejs 20.14.0
-   ```  
    Navigate to the `assets` folder inside the project directory and install JavaScript-based dependencies:  
    ```bash
    npm install
